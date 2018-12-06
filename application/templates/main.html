@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Maxis - kshanuanand
+		</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/head.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename='javascript/time.js') }}"></script>
+	</head>
+	<body onload="startTime()">
+				<div class='container'>
+					<table width='100%' border='2px'>
+						<thead>
+							<th>{{ logo }}</th>
+							<th>{{ hostname }}</th>
+							<th id="clock">Live Clock</th>
+						</thead>
+					</table>
+					
+				</div>
+				<div class='container'>
+					<table width='100%' border='2px'>
+						Basic Info About environment
+					</table>
+				</div>
+				<div class='container' align="left">
+					<table width='100%' border='2px'>
+						<tr>
+							<td rowspan="2">
+								Status of all the applications
+							</td>
+							<td>
+								Drop Down for reboot
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Logs section
+							</td>
+						</tr>
+						
+					</table>
+				</div>
+	</body>
+</html>
